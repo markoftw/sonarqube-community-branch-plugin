@@ -1,6 +1,11 @@
 name: build
 
 on:
+  workflow_dispatch:
+    inputs:
+      commit-sha:
+        type: string
+        description: Commit SHA
   push:
     branches:
       - '**'
